@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.wav
+*.mp3
+.env
+*.egg-info/
+dist/
+build/
+.gradio/
+flagged/
