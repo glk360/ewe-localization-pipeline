@@ -41,7 +41,7 @@ def load_nllb():
     global _nllb_tokenizer, _nllb_model
     if _nllb_model is None:
         _nllb_tokenizer = NllbTokenizer.from_pretrained(
-            "facebook/nllb-200-distilled-600M"
+            "facebook/nllb-200-distilled-600M", src_lang="fra_Latn"
         )
         _nllb_model = AutoModelForSeq2SeqLM.from_pretrained(
             "facebook/nllb-200-distilled-600M"
